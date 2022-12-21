@@ -1,0 +1,83 @@
+.i {
+	display: flex;
+	height: 100vh;
+}
+.i-left {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.i-right {
+	flex: 1;
+	position: relative;
+	/*kapag gumamit ako ng position: absolute; ang parent ay dapat position: relative*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.i-left-wrapper {
+	padding: 50px;
+	height: 50%;
+	/*background: red;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.i-intro {
+	font-size: 30px;
+	font-weight: 300;
+}
+.i-name {
+	font-size: 40px;
+}
+
+.i-title {
+	height: 50px;
+	/*background: #000;*/
+	overflow: hidden;
+}
+.i-title-wrapper {
+	height: 100%;
+	/*Ang 100% height ay magiging 50px din dahil ang .i-title-wrapper nasa loob sya .i-title div*/
+	animation: move 10s ease-in-out infinite alternate;
+	animation-duration: 5s;
+}
+@keyframes move {
+	33%{
+		transform: translateY(-50px);
+	}
+	66%{
+		transform: translateY(-100px);
+	}
+	100%{
+		transform: translateY(-150px);
+	}
+	/*kaya 50px ang increment nya ay dahil sa .i.title {height: 50px}*/
+}
+.i-title-item {
+	height: 50px;
+	font-size: 20px;
+	color: #59b256;
+	display: flex;
+	align-items: center;
+}
+
+.i-image {
+	width: 90%;
+	height: 90%;
+	object-fit: cover;
+	position: absolute;
+	/*Para hindi matabunan ng polygon ang image ko, ginawa ko ring position: absolute; ang image*/
+}
+.dp-bg {
+	/*https://bennettfeely.com/clippy/*/
+	clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+	background-color: #59b256;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/*kapag gumamit ako ng position: absolute; ang parent ay dapat position: relative*/
+	top: 0;
+	right: 0;
+}
