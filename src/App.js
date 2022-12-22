@@ -1,6 +1,5 @@
 import Intro from './components/Intro.js';
 import About from './components/About.js';
-/*import Product from './components/Product.js';*/
 import ProductList from './components/ProductList.js';
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
       <Intro/>
       <About/>
       <ProductList/>
-      {/*<Product/>*/}
     </div>
   );
 }
