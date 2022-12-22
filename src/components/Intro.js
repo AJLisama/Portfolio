@@ -1,4 +1,4 @@
-import "./Intro.css";
+import "./intro.css";
 import profile from "../images/dp.png";
 
 export default function Intro() {

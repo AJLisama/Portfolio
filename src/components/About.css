@@ -1,1 +1,69 @@
-About.css
+.a {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+}
+.a-left {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 100%;
+	/*background-color: green;*/
+}
+.a-right {
+	flex: 1;
+}
+
+
+.a-card.bg {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	background-color: #d3d3d3;
+}
+.a-card {
+	width: 70%;
+	height: 70vh;
+	border-radius: 30px;
+	overflow: hidden;
+	position: relative;
+}
+.a-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.a-title {
+	font-weight: 400;
+	color: #555;
+}
+.a-sub {
+	margin: 20px 0px;
+}
+.a-desc {
+	font-weight: 300;
+}
+.a-award-texts {
+	width: 50%;
+}
+.a-award-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.a-award {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.a-award-img {
+	margin: 0px 10px;
+	width: 45%;
+	height: 45%;
+	border-radius: 20px;
+}
