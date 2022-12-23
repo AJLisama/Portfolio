@@ -1,9 +1,6 @@
 import sampleProject1 from '../images/sampleProject1.PNG';
 import sampleProject2 from '../images/sampleProject2.PNG';
 import sampleProject3 from '../images/sampleProject3.png';
-import sampleProject4 from '../images/sampleProject4.png';
-import sampleProject5 from '../images/sampleProject5.png';
-import sampleProject6 from '../images/sampleProject6.png';
 import './productList.css';
 
 export default function ProductList() {
@@ -39,7 +36,7 @@ export default function ProductList() {
 					<a href="google.com" target="_blank" rel="noreferrer"> {/*kapag natapos ko na ang iba kong projects, ilalagay ko dito yung link*/}
 						<img className="p-img" src={sampleProject2} alt="" /> {/*kapag natapos ko na ang iba kong projects, ilalagay ko dito yung screen shot*/}
 					</a>
-				</div> {/*p-card card-1 end*/}
+				</div> {/*p-card card-2 end*/}
 
 				<div className="p-card card-3">
 					<div className="p-card-top">
@@ -50,8 +47,7 @@ export default function ProductList() {
 					<a href="google.com" target="_blank" rel="noreferrer"> {/*kapag natapos ko na ang iba kong projects, ilalagay ko dito yung link*/}
 						<img className="p-img" src={sampleProject3} alt="" /> {/*kapag natapos ko na ang iba kong projects, ilalagay ko dito yung screen shot*/}
 					</a>
-				</div> {/*p-card card-1 end*/}
-
+				</div> {/*p-card card-3 end*/}
 
 			</div> {/*pl-list end*/}
 
