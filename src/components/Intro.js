@@ -63,7 +63,7 @@ export default function Intro() {
 			
 			<div className="i-right">
 				<div className="dp-bg" ></div>
-				<img src={profile} alt="Abdul Ducusin" className="i-image"/>
+				<img className="i-image" src={profile} alt="Abdul Ducusin"/>
 			</div>
 
 		</div>
