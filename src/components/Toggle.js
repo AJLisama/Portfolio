@@ -17,7 +17,7 @@ export default function Toggle() {
 			<img className="t-icon" src={Sun} alt=""/>
 			<img className="t-icon" src={Moon} alt=""/>
 			<button className="t-button" onClick={handleClick}
-			style={{left: darkMode ? -5 : 25}}></button>
+			style={{left: !darkMode ? 25 : -5}}></button>
 		</div>
 	)
 };

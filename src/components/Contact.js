@@ -1,13 +1,9 @@
 import phoneIcon from '../images/phoneIconBlack.png';
 import emailIcon from '../images/emailIconBlack.png';
 import addressIcon from '../images/addressIconBlack.png';
-import phoneIconWhite from '../images/phoneIconWhite.png';
-import emailIconWhite from '../images/emailIconWhite.png';
-import addressIconWhite from '../images/addressIconWhite.png';
-import { useRef, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './contact.css';
-import { useContext } from 'react';
 import { ThemeContext } from '../context.js';
 
 export default function Contact() {
@@ -46,7 +42,7 @@ export default function Contact() {
 						<div className="c-info-item">
 							<img
 								className="c-icon"
-								src={{src: darkMode ? {phoneIcon} : {phoneIconWhite} }}
+								src={phoneIcon}
 								alt=""
 							/>
 							+639955288255
@@ -79,10 +75,10 @@ export default function Contact() {
 						<b>What is my story?</b> When I was in high school, I was fascinated with websites and softwares. I spend my summer break exploring and playing around with websites and software. And on that time I learn to modify games like GTA Vice City.
 					</p>
 					<form ref={formRef} onSubmit={handleSubmit}>
-						<input type="text" placeholder="Name" name="user_name"/>
-						<input type="text" placeholder="Subject" name="user_subject"/>
-						<input type="text" placeholder="Email" name="user_email"/>
-						<textarea rows="5" placeholder="Message" name="message"/>
+						<input style={{backgroundColor: darkMode? "#222" : "white"}} type="text" placeholder="Name" name="user_name"/>
+						<input style={{backgroundColor: darkMode? "#222" : "white"}} type="text" placeholder="Subject" name="user_subject"/>
+						<input style={{backgroundColor: darkMode? "#222" : "white"}} type="text" placeholder="Email" name="user_email"/>
+						<textarea style={{backgroundColor: darkMode? "#222" : "white"}} rows="5" placeholder="Message" name="message"/>
 						<button>Submit</button>
 						{done && "Email Sent"}
 					</form>
