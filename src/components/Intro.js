@@ -39,14 +39,14 @@ export default function Intro() {
 	 					className="i-scroll"
 	 				>
     				<circle
-    					class="circle-1"
+    					className="circle-1"
     					fill="black"
     					cx="7.167"
     					cy="6"
     					r="1.2"
     				/>
     				<circle
-    					class="circle-2"
+    					className="circle-2"
     					fill="black"
     					cx="7.167"
     					cy="6"

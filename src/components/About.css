@@ -67,3 +67,35 @@
 	height: 45%;
 	border-radius: 20px;
 }
+
+
+@media screen and (max-width: 480px) {
+	.a {
+		flex-direction: column;
+		text-align: center;
+		margin: 50px;
+	}
+
+	.a-left {
+		width: 100%;
+	}
+
+	.a-card {
+		height: 30vh;
+	}
+
+	.a-card.bg {
+		display: none;
+	}
+
+	.a-award {
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.a-award-img {
+		width: 100%;
+		margin: 20px;
+	}
+}

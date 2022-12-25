@@ -58,3 +58,23 @@
 .p-img:hover {
 	transform: translateY(-100%);
 }
+
+
+@media screen and (max-width: 480px) {
+	.pl-list {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.pl-texts {
+		width: 100%;
+		height: 100vh;
+		margin: 10px;
+	}
+
+	.p-card {
+		width: 100%;
+		height: 15vh;
+	}
+}

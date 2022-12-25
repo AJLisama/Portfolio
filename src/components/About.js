@@ -1,8 +1,14 @@
 import './about.css';
-import image1 from '../images/concept/concept3.png';
-import imageAward from '../images/specialAward.png'
+import image1 from '../images/concept/concept1.PNG';
+import imageAward from '../images/specialAward.png';
+import { useContext } from 'react';
+import { ThemeContext } from '../context.js';
 
 export default function About() {
+
+	const theme = useContext(ThemeContext);
+	const darkMode = theme.state.darkMode;
+
 	return (
 		<div className="a">
 			
@@ -15,7 +21,7 @@ export default function About() {
 			
 			<div className="a-right" >
 
-				<h1 className="a-title">About Me</h1>
+				<h1 className="a-title" style={{color: darkMode? "white" : "black"}}>About Me</h1>
 				<p className="a-sub">
 					The greatest reward a man can achieve from his toil is not what he gets, but what he becomes by it.
 				</p>
