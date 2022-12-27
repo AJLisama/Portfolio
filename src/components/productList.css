@@ -10,6 +10,7 @@
 
 .pl-texts {
 	width: 65%;
+	background-color: darkred;
 }
 .pl-title {
 	font-size: 50px;
@@ -61,10 +62,15 @@
 
 
 @media screen and (max-width: 480px) {
-	.pl-list {
+	.pl {
 		width: 100%;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
+	}
+
+	.pl-list {
+
 	}
 
 	.pl-texts {

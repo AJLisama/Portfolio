@@ -1,5 +1,5 @@
 import './about.css';
-import image1 from '../images/concept/concept1.PNG';
+import image1 from '../images/concept/concept3.png';
 import imageAward from '../images/specialAward.png';
 import { useContext } from 'react';
 import { ThemeContext } from '../context.js';

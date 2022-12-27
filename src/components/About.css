@@ -73,7 +73,7 @@
 	.a {
 		flex-direction: column;
 		text-align: center;
-		margin: 50px;
+		margin: 10px;
 	}
 
 	.a-left {
@@ -96,6 +96,10 @@
 
 	.a-award-img {
 		width: 100%;
-		margin: 20px;
+		margin: 10px;
+	}
+
+	.a-award-texts {
+		width: 100%;
 	}
 }
